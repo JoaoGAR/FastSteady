@@ -24,9 +24,9 @@
 		</div>
 
 		<div class="col-md-10 clearfix">
-			<div id="boxes__" class="row">
+			<div class="row boxes__">
 				<?php for ($i=0; $i < 12; $i++) { ?>
-				<div class="col-md-2 thumbnail box__">
+				<div class="col-md-2 box__ thumbnail">
 					<a href="<?=base_url('index.php/page') ?>"><img data-toggle="tooltip" data-placement="top" title="E.T O Extraterrestre" class="img-responsive" src="http://br.web.img1.acsta.net/medias/nmedia/18/95/16/34/20384584.jpg" alt="E.T o Extraterrestre"></a>
 					<div class="col-md-12 footer text-center">
 						<div class="col-md-2">
@@ -66,15 +66,15 @@
 			</div>
 		</div>
 
-		<div class="col-md-2">
-			<?php for ($i=0; $i < 3; $i++) { ?>
-			<div style="margin-top:2px;">
-				<a href="javascript:void(0)">
-					<img class="img-responsive" src="<?=base_url('images/propaganda.jpg') ?>">
-				</a>
-			</div>
-			<?php } ?>
+		<div class="col-md-2 thumbnail hidden-xs hidden-sm">
+		<?php for ($i=0; $i < 3; $i++) { ?>
+		<div style="margin-top:2px;">
+			<a href="javascript:void(0)">
+				<img class="img-responsive" src="<?=base_url('images/propaganda.jpg') ?>">
+			</a>
 		</div>
+		<?php } ?>
+	</div>
 
 	</div>
 </div>

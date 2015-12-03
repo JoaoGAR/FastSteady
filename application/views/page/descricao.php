@@ -73,33 +73,18 @@
 				</p>
 			</div>
 			<div class="descricao__txt panel-body text-justify" style="margin-bottom:10px;">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-				A sit voluptatibus quis, perspiciatis delectus maiores ratione 
-				soluta sequi repudiandae aliquid consequuntur laborum dolore pariatur maxime quibusdam ducimus odio eius, eveniet.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quia quam ad dignissimos laudantium minus molestiae 
-				eius optio tempora ipsa voluptate voluptatem debitis, quos aspernatur adipisci fugiat perspiciatis dolore veritatis.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, ducimus architecto officiis optio odio voluptates 
-				saepe consequuntur atque ex eius harum exercitationem? At, culpa! Et aperiam id qui amet. Eos.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus animi quibusdam ab atque, ipsa qui magni soluta pariatur. 
-				Culpa amet nihil non blanditiis possimus ipsam molestiae, perspiciatis cumque, omnis numquam.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta qui aliquam repellendus maxime veritatis sunt sit sequi 
-				eius non, saepe, delectus amet odio, vitae reiciendis autem libero, illo harum voluptate!
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quos accusamus voluptas delectus similique possimus 
-				soluta aliquam libero minus eum, tempore cumque, facilis quod suscipit error dolor ea ex omnis.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-				A sit voluptatibus quis, perspiciatis delectus maiores ratione 
-				soluta sequi repudiandae aliquid consequuntur laborum dolore pariatur maxime quibusdam ducimus odio eius, eveniet.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quia quam ad dignissimos laudantium minus molestiae 
-				eius optio tempora ipsa voluptate voluptatem debitis, quos aspernatur adipisci fugiat perspiciatis dolore veritatis.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, ducimus architecto officiis optio odio voluptates 
-				saepe consequuntur atque ex eius harum exercitationem? At, culpa! Et aperiam id qui amet. Eos.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus animi quibusdam ab atque, ipsa qui magni soluta pariatur. 
-				Culpa amet nihil non blanditiis possimus ipsam molestiae, perspiciatis cumque, omnis numquam.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta qui aliquam repellendus maxime veritatis sunt sit sequi 
-				eius non, saepe, delectus amet odio, vitae reiciendis autem libero, illo harum voluptate!
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quos accusamus voluptas delectus similique possimus 
-				soluta aliquam libero minus eum, tempore cumque, facilis quod suscipit error dolor ea ex omnis.>
-				Panel content
+				No meu xinélo da humildade eu gostaria muito de ver o Neymar e o Ganso. Por que eu acho que.... 11 entre 10 brasileiros gostariam. Você veja, eu já vi, parei de ver. <br>
+				Voltei a ver, e acho que o Neymar e o Ganso têm essa capacidade de fazer a gente olhar.
+				Todos as descrições das pessoas são sobre a humanidade do atendimento, a pessoa pega no pulso, examina, olha com carinho. 
+				Então eu acho que vai ter outra coisa, que os médicos cubanos trouxeram pro brasil, um alto grau de humanidade.
+				Eu dou dinheiro pra minha filha. Eu dou dinheiro pra ela viajar, então é... é... <br>
+				Já vivi muito sem dinheiro, já vivi muito com dinheiro. 
+				-Jornalista: Coloca esse dinheiro na poupança que a senhora ganha R$10 mil por mês. 
+				-Dilma: O que que é R$10 mil?
+				Primeiro eu queria cumprimentar os internautas. 
+				-Oi Internautas! Depois dizer que o meio ambiente é sem dúvida nenhuma uma ameaça ao desenvolvimento sustentável. <br>
+				E isso significa que é uma ameaça pro futuro do nosso planeta e dos nossos países. 
+				O desemprego beira 20%, ou seja, 1 em cada 4 portugueses.
 			</div>
 			<div class="panel-footer">
 				<button class="btn btn-primary btn-block btn-lg"><span class="glyphicon glyphicon-download"></span> Baixar</button>
