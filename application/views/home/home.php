@@ -11,23 +11,34 @@
 </head>
 <body>
 	<?=$this->load->view('shared/header') ?>
-	<div class="corpo__ ">
+	<div class="corpo__ container">
 
-		<div class="categorias__ hidden-xs hidden-sm">
-			<div class="col-md-6 categorias__img">
-				<a href=""><img class="img-responsive" src="<?=base_url('images/categorias_img_jogos.jpg') ?>" alt="Jogos"></a>
-			</div>
+		<div class="row">
+			<div id="carousel" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel" data-slide-to="1"></li>
+				</ol>
 
-			<div class="col-md-6 categorias__img">
-				<a href=""><img class="img-responsive" src="<?=base_url('images/categorias_img_filmes.jpg') ?>" alt="Filmes"></a>
+				<div class="carousel-inner" role="listbox">
+					<div class="item active descricao__fotos">
+						<a href="javascript:void(0)"><img class="img-responsive" src="<?=base_url('images/categorias_img_jogos.jpg') ?>" alt="Jogos"></a>
+					</div>
+
+					<div class="item descricao__fotos">
+						<a href="javascript:void(0)"><img class="img-responsive" src="<?=base_url('images/categorias_img_filmes.jpg') ?>" alt="Filmes"></a>
+					</div>
+				</div>
 			</div>
 		</div>
 
-		<div class="col-md-10 clearfix">
-			<div class="row boxes__">
-				<?php for ($i=0; $i < 12; $i++) { ?>
-				<div class="col-md-2 box__ thumbnail">
-					<a href="<?=base_url('index.php/page') ?>"><img data-toggle="tooltip" data-placement="top" title="E.T O Extraterrestre" class="img-responsive" src="http://br.web.img1.acsta.net/medias/nmedia/18/95/16/34/20384584.jpg" alt="E.T o Extraterrestre"></a>
+		<div class="col-md-10 clearfix meio__">
+			<div class="row">
+				<?php for ($i=0; $i < 8; $i++) { ?>
+				<div class="col-md-3 box__">
+					<a href="<?=base_url('index.php/page') ?>">
+						<img data-toggle="tooltip" data-placement="top" title="E.T O Extraterrestre" class="img-responsive" src="<?=base_url('images/ET.Capa.jpg') ?>" alt="E.T o Extraterrestre">
+					</a>
 					<div class="col-md-12 footer text-center">
 						<div class="col-md-2">
 							<span class="glyphicon glyphicon-download"></span>
@@ -66,21 +77,25 @@
 			</div>
 		</div>
 
-		<div class="col-md-2 thumbnail hidden-xs hidden-sm">
-		<?php for ($i=0; $i < 3; $i++) { ?>
-		<div style="margin-top:2px;">
-			<a href="javascript:void(0)">
-				<img class="img-responsive" src="<?=base_url('images/propaganda.jpg') ?>">
-			</a>
+		<div class="col-md-2 hidden-xs hidden-sm">
+			<?php for ($i=0; $i < 4; $i++) { ?>
+			<div class="box__propaganda">
+				<a href="javascript:void(0)">
+					<img class="img-responsive" src="<?=base_url('images/propaganda.jpg') ?>">
+				</a>
+			</div>
+			<?php } ?>
 		</div>
-		<?php } ?>
-	</div>
 
 	</div>
 </div>
 <script>
 	$(function () {
 		$('[data-toggle="tooltip"]').tooltip()
+	})
+
+	$('.carousel').carousel({
+		interval: 1500
 	})
 </script>
 </body>

@@ -33,12 +33,23 @@ body {
 /*
 ----- Caixas da pagina inicial ------
 */
-.boxes__ {
+.meio__ {
+	padding:0;
+}
+
+.box__ {
+	margin-top: 3px;
+}
+
+.box__ .img-responsive {
+	border: 3px solid #0f5e2f;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
 	padding:0;
 }
 
 .box__propaganda {
-	padding-right:0;
+	margin:0;
 	margin-top:2px;
 }
 
@@ -50,7 +61,6 @@ body {
 .box__ .footer {
 	background-color:#0f5e2f;
 	color:white;
-	margin-bottom:0;
 	font-size:20px;
 }
 
@@ -69,7 +79,7 @@ body {
 .thumbnail {
 	display: block;
 	padding: 0;
-	margin: 0;
+	margin: 1px;
 	margin-top: 2px;
 	line-height: 1.42857143;
 	background-color: #fff;
@@ -83,12 +93,9 @@ body {
 /*
 ----- Categorias da pagina inicial ------
 */
-.categorias__ {
-	height: 200px;
-}
-
 .categorias__img {
 	padding:0;
+	margin-bottom: 3px;
 }
 
 .categorias__img:hover {
@@ -158,12 +165,12 @@ body {
 	display:none;
 }
 
-.navbar-inverse .navbar-nav .subcat__>li>a {
+.nav .navbar-nav .subcat__>li>a {
 	color:#1F7F4E;
 	background-color: white;
 }
 
-.navbar-inverse .navbar-nav .subcat__>li>a:hover {
+.nav .navbar-nav .subcat__>li>a:hover {
 	color: #ccffe0;
 	background-color: #0f5e2f;
 }
@@ -176,6 +183,8 @@ body {
 	padding-left: 0;
 	margin: 20px 0;
 	border-radius: 4px;
+	background-color:#0f5e2f;
+	color:white;
 }
 .pagination > li {
 	display: inline;
@@ -187,9 +196,9 @@ body {
 	padding: 6px 12px;
 	margin-left: -1px;
 	line-height: 1.42857143;
-	color: #0f5e2f;
+	color: white;
 	text-decoration: none;
-	background-color: #fff;
+	background-color:#0f5e2f;
 	border: 1px solid #ddd;
 }
 .pagination > li:first-child > a,
@@ -208,8 +217,8 @@ body {
 .pagination > li > a:focus,
 .pagination > li > span:focus {
 	z-index: 3;
-	color: #0f5e2f;
-	background-color: #eee;
+	color:#0f5e2f;
+	background-color:#daeae0;
 	border-color: #ddd;
 }
 .pagination > .active > a,
@@ -219,9 +228,9 @@ body {
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
 	z-index: 2;
-	color: #fff;
+	color: #0f5e2f;
 	cursor: default;
-	background-color: #0f5e2f;
+	background-color: #abd4bc;
 	border-color: #0f5e2f;
 }
 
@@ -232,8 +241,13 @@ body {
 	padding:0;
 }
 
+.relacionados {
+	padding:0;
+	background-color:#054f23;
+}
+
 .descricao__relacionados {
-	background-color:#0f5e2f;
+	background-color:#054f23;
 	height:40px;
 	color:white;
 }

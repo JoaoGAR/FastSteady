@@ -92,13 +92,13 @@
 		</div>
 	</div>
 
-	<div class="col-md-2 descricao__">
+	<div class="col-md-2 relacionados">
 		<div class="col-md-12 text-center descricao__relacionados">
 			<h4><span class="glyphicon glyphicon-star"></span> Relacionados</h4>
 		</div>
 		<div>
 			<?php for ($i=0; $i < 3; $i++) { ?>
-			<div class="col-md-12 thumbnail box__">
+			<div class="col-md-12 box__">
 				<a href=""><img data-toggle="tooltip" data-placement="top" title="E.T O Extraterrestre" class="img-responsive" src="http://br.web.img1.acsta.net/medias/nmedia/18/95/16/34/20384584.jpg" alt="E.T o Extraterrestre"></a>
 				<div class="col-md-12 footer text-center">
 					<div class="col-md-2">
@@ -110,7 +110,7 @@
 		</div>
 	</div>
 
-	<div class="col-md-2">
+	<div class="col-md-2" style="background-color:white;">
 		<?php for ($i=0; $i < 5; $i++) { ?>
 		<div style="margin-top:2px;">
 			<a href="javascript:void(0)">
