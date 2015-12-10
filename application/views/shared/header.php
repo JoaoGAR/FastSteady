@@ -1,4 +1,4 @@
-<nav id="navegacao" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<nav id="navegacao" class="navbar navbar-inverse" role="navigation">
 	<div class="container-fluid" style="background:#0f5e2f;">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#toggle" aria-expanded="false">
@@ -10,16 +10,22 @@
 			<a class="navbar-brand" href="<?=base_url('/') ?>"><span class="glyphicon glyphicon-home"></span></a>
 		</div>
 		<div class="nav navbar-nav collapse navbar-collapse" id="toggle">
-			<div class="navbar-right">
+			<div class="nav navbar-nav categoria__">
 				<li><a href="javascript:void(0)">Categorias <span class="glyphicon glyphicon-menu-hamburger"></span></a></li>
 			</div>
-			<div class="navbar-right categoria__">
-				<li><a href="javascript:void(0)">Categorias <span class="glyphicon glyphicon-menu-hamburger"></span></a></li>
+		</div>
+
+		<div class="col-md-4 navbar-right pesquisar__">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Pesquisar">
+				<span class="input-group-btn">
+					<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+				</span>
 			</div>
 		</div>
 	</div>
 
-	<div class="container nav navbar-nav subcat__">
+	<div class="row nav navbar-nav subcat__">
 		<li><a href="javascript:void(0)">Ação</a></li>
 		<li><a href="javascript:void(0)">Animação</a></li>
 		<li><a href="javascript:void(0)">Aventura</a></li>
@@ -44,14 +50,20 @@
 
 <script>
 	$(".categoria__").on("click", function(e){
-		if (!$(this).parent().hasClass("active")) {
-			$(this).parent().addClass("active");
+		var div = $(".subcat__");
+		div.toggle(200);
+	});
+
+	$(window).scroll(function(){
+		var scrollAtual = $(this).scrollTop();
+		var navegacao = $('#navegacao');
+		
+		if (scrollAtual >= 700) {
+			navegacao.addClass('navbar-fixed-top');
 		}
 		else {
-			$(this).parent().removeClass("active");
+			navegacao.removeClass('navbar-fixed-top');
 		}
-		var div = $(this).parent().next();
-		div.toggle(200);
 	});
 </script>
 

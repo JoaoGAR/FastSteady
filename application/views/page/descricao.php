@@ -11,46 +11,47 @@
 </head>
 <body>
 	<?=$this->load->view('shared/header') ?>
-	<div class="col-md-8 descricao__">
-		<div id="carousel" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carousel" data-slide-to="0" class="active"></li>
-				<li data-target="#carousel" data-slide-to="1"></li>
-				<li data-target="#carousel" data-slide-to="2"></li>
-				<li data-target="#carousel" data-slide-to="3"></li>
-			</ol>
+	<div class="container">
+		<div class="col-md-8 descricao__">
+			<div id="carousel" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel" data-slide-to="1"></li>
+					<li data-target="#carousel" data-slide-to="2"></li>
+					<li data-target="#carousel" data-slide-to="3"></li>
+				</ol>
 
-			<div class="carousel-inner" role="listbox">
-				<div class="item active descricao__fotos">
-					<a href="javascript:void(0)"><img class="img-responsive" src="https://i.ytimg.com/vi/0JXJsHPcEWc/maxresdefault.jpg" alt="Jogos"></a>
+				<div class="carousel-inner" role="listbox">
+					<div class="item active descricao__fotos">
+						<a href="javascript:void(0)"><img class="img-responsive" src="https://i.ytimg.com/vi/0JXJsHPcEWc/maxresdefault.jpg" alt="Jogos"></a>
+					</div>
+
+					<div class="item descricao__fotos">
+						<a href="javascript:void(0)"><img class="img-responsive" src="http://s1.dmcdn.net/ALPrU/1280x720-iEH.jpg" alt="Filmes"></a>
+					</div>
+
+					<div class="item descricao__fotos">
+						<a href="javascript:void(0)"><img class="img-responsive" src="http://i.ytimg.com/vi/7OuUA8XHIdQ/maxresdefault.jpg" alt="Softwares"></a>
+					</div>
+
+					<div class="item descricao__fotos">
+						<a href="javascript:void(0)"><img class="img-responsive" src="http://image.tmdb.org/t/p/w1560/19YrVW557AoZOd6vQ8pg4HPF8uh.jpg" alt="Softwares"></a>
+					</div>
 				</div>
 
-				<div class="item descricao__fotos">
-					<a href="javascript:void(0)"><img class="img-responsive" src="http://s1.dmcdn.net/ALPrU/1280x720-iEH.jpg" alt="Filmes"></a>
-				</div>
-
-				<div class="item descricao__fotos">
-					<a href="javascript:void(0)"><img class="img-responsive" src="http://i.ytimg.com/vi/7OuUA8XHIdQ/maxresdefault.jpg" alt="Softwares"></a>
-				</div>
-
-				<div class="item descricao__fotos">
-					<a href="javascript:void(0)"><img class="img-responsive" src="http://image.tmdb.org/t/p/w1560/19YrVW557AoZOd6vQ8pg4HPF8uh.jpg" alt="Softwares"></a>
-				</div>
+				<a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
 			</div>
 
-			<a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#carousel" role="button" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
-		</div>
-
-		<div class="panel panel-primary descricao__">
-			<div class="panel-heading">
-				<p>E.T o Extraterrestre
+			<div class="panel panel-primary descricao__">
+				<div class="panel-heading">
+					<p>E.T o Extraterrestre
 					<!--<span class="label label-acao">Ação</span>
 					<span class="label label-animacao">Animação</span>
 					<span class="label label-aventura">Aventura</span>
@@ -62,7 +63,7 @@
 					<span class="label label-erotico">Erótico</span>
 					<span class="label label-fantasia">Fantasia</span>
 					<span class="label label-faroeste">Faroeste</span>-->
-					<span class="label label-ficC">Ficção científica</span>
+					<span class="label label-ficC">Ficção Científica</span>
 					<!--<span class="label label-guerra">Guerra</span>
 					<span class="label label-musical">Musical</span>
 					<span class="label label-policial">Policial</span>
@@ -92,25 +93,53 @@
 		</div>
 	</div>
 
-	<div class="col-md-2 relacionados">
+	<div class="col-md-4 relacionados">
 		<div class="col-md-12 text-center descricao__relacionados">
 			<h4><span class="glyphicon glyphicon-star"></span> Relacionados</h4>
 		</div>
-		<div>
-			<?php for ($i=0; $i < 3; $i++) { ?>
-			<div class="col-md-12 box__">
-				<a href=""><img data-toggle="tooltip" data-placement="top" title="E.T O Extraterrestre" class="img-responsive" src="http://br.web.img1.acsta.net/medias/nmedia/18/95/16/34/20384584.jpg" alt="E.T o Extraterrestre"></a>
-				<div class="col-md-12 footer text-center">
-					<div class="col-md-2">
-						<span class="glyphicon glyphicon-download"></span>
-					</div>
+		<?php for ($i=0; $i < 6; $i++) { ?>
+		<div class="col-md-6 box__">
+			<a href="">
+				<img data-toggle="tooltip" data-placement="top" title="E.T O Extraterrestre" class="img-responsive" src="http://br.web.img1.acsta.net/medias/nmedia/18/95/16/34/20384584.jpg" alt="E.T o Extraterrestre">
+			</a>
+			<div class="col-md-12 footer text-center">
+				<div class="col-md-2">
+					<span class="glyphicon glyphicon-download"></span>
 				</div>
 			</div>
-			<?php } ?>
+		</div>
+		<?php } ?>
+
+		<div class="row text-center">
+			<div class="col-md-12">
+				<ul class="pagination">
+					<li>
+						<a href="#">&laquo;</a>
+					</li>
+					<li class="active">
+						<a href="#">1</a>
+					</li>
+					<li>
+						<a href="#">2</a>
+					</li>
+					<li>
+						<a href="#">3</a>
+					</li>
+					<li>
+						<a href="#">4</a>
+					</li>
+					<li>
+						<a href="#">5</a>
+					</li>
+					<li>
+						<a href="#">&raquo;</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 
-	<div class="col-md-2" style="background-color:white;">
+	<!--<div class="col-md-2" style="background-color:white;">
 		<?php for ($i=0; $i < 5; $i++) { ?>
 		<div style="margin-top:2px;">
 			<a href="javascript:void(0)">
@@ -118,16 +147,16 @@
 			</a>
 		</div>
 		<?php } ?>
-	</div>
+	</div>-->
+</div>
+<script>
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	})
 
-	<script>
-		$(function () {
-			$('[data-toggle="tooltip"]').tooltip()
-		})
-
-		$('.carousel').carousel({
-			interval: 3000
-		})
-	</script>
+	$('.carousel').carousel({
+		interval: 3000
+	})
+</script>
 </body>
 </html>

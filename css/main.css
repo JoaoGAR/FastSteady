@@ -4,17 +4,10 @@ html,body {
 }
 
 body {
-	margin-top:114px;
 	background-image: url("/FastSteady/images/background_nasa.jpg");
 	background-repeat: repeat;
 	background-position: right top;
 	background-attachment: fixed;
-}
-
-@media (max-width: 775px) {
-	body {
-		margin-top:120px;
-	}
 }
 
 .hr {
@@ -30,13 +23,14 @@ body {
 	box-shadow: inset 0 1px 0 rgba(255,255,255,.1),0 1px 0 rgba(255,255,255,.1);
 }
 
+.rodape__ {
+	background-color:#444444;
+	color:white;
+}
+
 /*
 ----- Caixas da pagina inicial ------
 */
-.meio__ {
-	padding:0;
-}
-
 .box__ {
 	margin-top: 3px;
 }
@@ -78,13 +72,12 @@ body {
 
 .thumbnail {
 	display: block;
-	padding: 0;
-	margin: 1px;
-	margin-top: 2px;
+	padding: 10px;
+	margin: 0;
 	line-height: 1.42857143;
 	background-color: #fff;
-	border: 2px solid #0f5e2f;
-	border-radius: 4px;
+	border: 1px solid #0f5e2f;
+	border-radius: 2px;
 	-webkit-transition: border .2s ease-in-out;
 	-o-transition: border .2s ease-in-out;
 	transition: border .2s ease-in-out;
@@ -93,13 +86,22 @@ body {
 /*
 ----- Categorias da pagina inicial ------
 */
-.categorias__img {
-	padding:0;
-	margin-bottom: 3px;
+.pesquisar__ {
+	margin-top:7px;
 }
 
-.categorias__img:hover {
-	border:1px solid transparent;
+@media (max-width: 1000px) {
+	.pesquisar__ {
+		margin-bottom:7px;
+	}
+}
+
+.categorias__ {
+	margin-top:3px;
+	color:#18673f;
+	padding:0;
+	padding-bottom: 10px;
+	border-radius: 2px;
 }
 
 /*
@@ -113,7 +115,7 @@ body {
 
 .navbar-inverse {
 	background-color: #1f7f4e;
-	border-color: #00993E;
+	border-color: #18673f;
 	border-radius: 1px; 
 }
 
@@ -173,6 +175,19 @@ body {
 .nav .navbar-nav .subcat__>li>a:hover {
 	color: #ccffe0;
 	background-color: #0f5e2f;
+}
+.subcat__show {
+	background-color: #0f5e2f;
+}
+
+.subcat__show>li>a {
+	color:white;
+	background-color: #0f5e2f;
+}
+
+.subcat__show>li>a:hover {
+	color: #0f5e2f;
+	background-color: #abd4bc;
 }
 
 /*
@@ -242,8 +257,9 @@ body {
 }
 
 .relacionados {
+	border-left: 1px solid #054f23;
+	background-color:#d9e1db;
 	padding:0;
-	background-color:#054f23;
 }
 
 .descricao__relacionados {
@@ -323,7 +339,7 @@ body {
 	background-color: #FF6347;
 }
 .label-cult {
-	background-color: #778899;
+	background-color: #FFD700;
 }
 .label-drama {
 	background-color: #8B7D7B;
@@ -341,7 +357,7 @@ body {
 	background-color: #CDB38B;
 }
 .label-ficC {
-	background-color: #A2B5ff;
+	background-color: #6C7B8B;
 }
 .label-guerra {
 	background-color: #CD3333;

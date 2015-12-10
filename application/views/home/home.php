@@ -10,9 +10,15 @@
 	<script src="<?=base_url('js/bootstrap.min.js') ?>"></script>
 </head>
 <body>
-	<?=$this->load->view('shared/header') ?>
-	<div class="corpo__ container">
+	<div class="container-fluid">
+		<div class="row" style="background-color:green;">
+			<img class="img-responsive" src="<?=base_url('images/ET.jpg') ?>" alt="Logo">
+		</div>
+	</div>
 
+	<?=$this->load->view('shared/header') ?>
+
+	<div class="container">
 		<div class="row">
 			<div id="carousel" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
@@ -31,8 +37,10 @@
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<div class="col-md-10 clearfix meio__">
+	<div class="container" style="background-color:white;">
+		<div class="col-md-8 clearfix meio__">
 			<div class="row">
 				<?php for ($i=0; $i < 8; $i++) { ?>
 				<div class="col-md-3 box__">
@@ -77,7 +85,36 @@
 			</div>
 		</div>
 
-		<div class="col-md-2 hidden-xs hidden-sm">
+		<div class="col-md-4 categorias__ hidden-xs hidden-sm">
+			<div class="col-md-12 text-center descricao__relacionados">
+				<h4><span class="glyphicon glyphicon-th-list"></span> CATEGORIAS</h4>
+			</div>
+			<div class="text-center">
+				<ol class="nav navbar-nav subcat__show">
+					<li class="col-md-4"><a href="javascript:void(0)">Ação</a></li>
+					<li class="col-md-4"><a href="javascript:void(0)">Animação</a></li>
+					<li class="col-md-4"><a href="javascript:void(0)">Aventura</a></li>
+					<li class="col-md-4"><a href="javascript:void(0)">Comédia</a></li>
+					<li class="col-md-4"><a href="javascript:void(0)">Cult</a></li>
+					<li class="col-md-4"><a href="javascript:void(0)">Drama</a></li>
+					<li class="col-md-4"><a href="javascript:void(0)">Espionagem</a></li>
+					<li class="col-md-4"><a href="javascript:void(0)">Fantasia</a></li>
+					<li class="col-md-4"><a href="javascript:void(0)">Faroeste</a></li>
+					<li class="col-md-4"><a href="javascript:void(0)">Guerra</a></li>
+					<li class="col-md-4"><a href="javascript:void(0)">Musical</a></li>
+					<li class="col-md-4"><a href="javascript:void(0)">Policial</a></li>
+					<li class="col-md-4"><a href="javascript:void(0)">Romance</a></li>
+					<li class="col-md-4"><a href="javascript:void(0)">Suspense</a></li>
+					<li class="col-md-4"><a href="javascript:void(0)">Terror</a></li>
+					<li class="col-md-4"><a href="javascript:void(0)">Trash</a></li>
+					<li class="col-md-4"><a href="javascript:void(0)">Comédia Romântica</a></li>
+					<li class="col-md-4"><a href="javascript:void(0)">Ficção Científica</a></li>
+					<li class="col-md-4"><a href="javascript:void(0)">Erótico 18+</a></li>
+				</ol>
+			</div>
+		</div>
+
+		<!--<div class="col-md-2 hidden-xs hidden-sm">
 			<?php for ($i=0; $i < 4; $i++) { ?>
 			<div class="box__propaganda">
 				<a href="javascript:void(0)">
@@ -85,18 +122,19 @@
 				</a>
 			</div>
 			<?php } ?>
-		</div>
+		</div>-->
 
 	</div>
-</div>
-<script>
-	$(function () {
-		$('[data-toggle="tooltip"]').tooltip()
-	})
+	<?=$this->load->view('shared/footer') ?>
 
-	$('.carousel').carousel({
-		interval: 1500
-	})
-</script>
+	<script>
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+
+		$('.carousel').carousel({
+			interval: 1500
+		})
+	</script>
 </body>
 </html>
